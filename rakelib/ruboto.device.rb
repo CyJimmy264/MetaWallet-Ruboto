@@ -75,9 +75,9 @@ end
 # Synchronize device system time with development system time.
 def set_device_time
   # TODO: (uwe) Remove when we stop supporting Android 6.0 and older
-  if sdk_level <= 23
-    return sh "adb shell date -s #{Time.now.strftime '%Y%m%d.%H%M%S'}"
-  end
+  # if sdk_level <= 23
+  #   return sh "adb shell date -s #{Time.now.strftime '%Y%m%d.%H%M%S'}"
+  # end
   # ODOT
 
   sh "adb shell date +'%Y%m%d.%H%M%S' #{Time.now.strftime '%Y%m%d.%H%M%S'}"
