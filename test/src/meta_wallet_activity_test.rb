@@ -1,4 +1,4 @@
-activity Java::ru.cj264.metawallet.MetawalletActivity
+activity Java::ru.cj264.metawallet.MetaWalletActivity
 
 setup do |activity|
   start = Time.now

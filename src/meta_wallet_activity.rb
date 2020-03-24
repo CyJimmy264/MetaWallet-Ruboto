@@ -5,10 +5,10 @@ ruboto_import_widgets :Button, :LinearLayout, :TextView
 
 # http://xkcd.com/378/
 
-class MetawalletActivity
+class MetaWalletActivity
   def onCreate(bundle)
     super
-    set_title 'Domo arigato, Mr Ruboto!'
+    set_title 'MetaWallet Ruboto'
 
     self.content_view =
         linear_layout :orientation => :vertical do
